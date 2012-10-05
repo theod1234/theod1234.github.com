@@ -1,0 +1,144 @@
+/* Grapes, web template for business or for fun */
+/* By Dave Reeder, www.davereederdesign.com */
+
+body {margin: 0; padding: 0; background: #FE9A2E} /* BACKGROUND COLOR */
+
+* {margin: 0; padding: 0; border: 0; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif}
+
+
+/*----------------------------------------------Basic styles------------------------------------------------*/
+
+h1, h2, h3, h4 {font-family: Trebuchet "Trebuchet MS", Arial, Helvetica, sans-serif; margin: 15px 0 0 5px; color: #000000; /*Title of Page*/ font-weight: normal; text-decoration: none}
+h1 em, h2 em, h3 em, h4 em {font-family: Trebuchet "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: normal}  /* italic words in titles */
+
+h1 {position: absolute; right: 0px; top: 30px; font-size: 2.25em; letter-spacing: 0.1em; line-height: 1.00em; padding-right: 10px; border-right: 15px solid #fff}
+h1:first-letter {font-family: Trebuchet "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 2.25em} /* styles the first letter of the main title to make it large */
+
+p#tagline {position: absolute; right: 0px; top: 125px; font-style: italic; color: #000000; font-size: 0.90em}  /* sits under main title */
+
+h2 {font-size: 1.30em; letter-spacing: 0.05em}
+
+p, ul, ol {margin: 10px 10px 0 7px; font-size: 0.70em; line-height: 1.60em; color: #000; letter-spacing: 0.05em}
+
+code {font-family: monospace; font-size: 1.20em; color: #E20000}
+
+p span {font-size: 1.50em; font-weight: bold} /* shouting words */
+
+a:link, a:visited {color: #792533; /*color or border right above copyright bar*/ font-weight: bold; text-decoration: none; border-bottom: 0px;}
+a:hover, a:active {color: #fff; border-color: #fff}
+
+ul {list-style: inside square} /* general lists */
+
+acronym {font-weight: bold; border-bottom: 1px dashed #000; cursor: help}
+
+
+/*-----------------------------------------------Layout DIVS------------------------------------------------*/
+
+#container {  /* keeps everything together */	
+	position: relative; 
+	margin: 0 auto; 
+	width: 800px;
+	background: #FFFFFF;  /* FOREGROUND COLOR */
+	overflow: hidden
+}
+
+#hdr {  /* div containing h1, nav and logo image */
+	float: left; 
+	width: 800px; 
+	height: 200px;
+	background-image: url(images/ROSAmainlogo.png );/* LOGO ON FRONT PAGE */
+	background-size:contain;
+	background-repeat:no-repeat;   
+}
+
+#hdr2 { 
+	float: left; 
+	width: 800px; 
+	height: 80px;
+	background-image:url(images/Rosa-logo.png); /* LOGO ON ALL OTHER PAGES */
+	background-size:contain;
+	background-repeat:no-repeat; 
+}
+
+#menu {
+	width:inherit;
+	height: 60;
+	margin:auto;
+	background: #FE9A2E; /*Color of menu bar*/
+	overflow: hidden;
+	display:inline-block;
+}
+
+#lftcol {   /* left column */
+	float: left; 
+	left: 0px;
+	top: 0px;
+	margin-left: 0px;  /* leave this so that background image lines up with edge of this div */
+	width: 160px; 
+	background: transparent;
+	overflow: hidden;
+}
+
+#rgtcol { float: right; width:700px; margin:auto; padding-bottom: 30px; background: transparent; overflow: hidden}  /* right column */
+
+#bttmbar {float: left; text-align: center; font-size: 0.70em; height: 4em; line-height: 4em; width: 800px; background: #FFFFFF /*color of bottom copyright bar*/; border-top: 2px solid #FE9A2E} /*color of border right above copyright bar*/
+
+/*
+#quote { 
+	float: left;
+	margin: 10px 0 20px 10px;
+	padding: 10px 0;
+	width: 170px;
+	text-align: center;
+	background: url(../test/images/quote.gif) no-repeat 0 0	
+}
+*/
+
+#quote p {color: #444; font-size: 0.80em; font-weight: bold; line-height: 2.00em}  /* Quote box text */
+
+
+/*---------------------------------------------Main Navigation-----------------------------------------------*/
+
+ul#nav {   /* navigation list */
+
+	margin: auto;
+	text-align:center;
+	padding: 0;
+	list-style: none inside;	
+}
+	
+ul#nav li {float: left;	display: block}
+
+.lang {
+	width: 2em;
+	float:right;
+	padding-right: .5em;
+	border: 0;
+	/* border-top: 10px solid #CCCC33; */
+	border-bottom: 0px;
+	font-family: Trebuchet "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul#nav li a {
+	width: 120px;
+	margin: 0 0 0 0;  /* a little top margin */
+	border: 0;
+	/* border-top: 10px solid #CCCC33; */
+	border-bottom: solid 10px #FF9B22;
+	padding: 10px 5px;
+	font-family: 
+	"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+}
+
+ul#nav li a#current {border-color: #fff}   /* current page, move id in the xhtml when creating a new page */
+
+ul#nav li a:hover {background: #000000; color: #fff}
+
+
+	
