@@ -9,3 +9,14 @@ gatekeeper_url: http://poole-oauth-staging.herokuapp.com
 exclude:
 - .gitignore
 - README.md
+
+prose:
+  metadata: 
+    _posts/ru/pages: |
+      layout: ru-page
+      title: Заголовок
+      published: true
+    _posts/en/pages: |
+      layout: en-page
+      title: Your post title
+      published: true
