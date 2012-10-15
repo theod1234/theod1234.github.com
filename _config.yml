@@ -1,0 +1,11 @@
+auto: true
+server: true
+pygments: true
+permalink: /:categories/:year/:month/:day/:title/
+root_dir: "http://theod1234.github.com"
+baseurl: "http://theod1234.github.com"
+oauth_client_id: caf55c20366465a1332d
+gatekeeper_url: http://poole-oauth-staging.herokuapp.com
+exclude:
+- .gitignore
+- README.md
